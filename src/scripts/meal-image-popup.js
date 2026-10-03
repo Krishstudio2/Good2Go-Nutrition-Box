@@ -1,9 +1,16 @@
-/**
- * Meal Image Popup Module
- * Opens a native <dialog> lightbox showing the full meal image.
- * Triggered by buttons with data-action="view-meal-image".
- * Does NOT interfere with the Order Now modal.
- */
+import mealMorning from '../assets/images/meal-morning.jpg';
+import mealLunch from '../assets/images/meal-lunch.jpg';
+import mealDinner from '../assets/images/meal-dinner.jpg';
+
+const MEAL_IMAGE_MAP = {
+  morning: mealMorning,
+  lunch: mealLunch,
+  dinner: mealDinner,
+  // Fallbacks for any legacy/path-based references
+  '/src/assets/images/meal-morning.jpg': mealMorning,
+  '/src/assets/images/meal-lunch.jpg': mealLunch,
+  '/src/assets/images/meal-dinner.jpg': mealDinner,
+};
 
 export function initMealImagePopup() {
   const dialog = document.querySelector('#meal-image-dialog');
@@ -49,8 +56,9 @@ export function initMealImagePopup() {
   // Wire trigger buttons
   document.querySelectorAll('[data-action="view-meal-image"]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      const src   = btn.getAttribute('data-image') || '';
-      const label = btn.getAttribute('data-label') || 'Meal Menu';
+      const imageKey = btn.getAttribute('data-image') || '';
+      const src      = MEAL_IMAGE_MAP[imageKey] || imageKey;
+      const label    = btn.getAttribute('data-label') || 'Meal Menu';
       open(src, label, btn);
     });
   });
