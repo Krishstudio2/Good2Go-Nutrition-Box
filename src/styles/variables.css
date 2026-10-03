@@ -1,0 +1,84 @@
+:root {
+  /* Brand Color Palette */
+  --color-primary: #2D5A27;
+  --color-primary-dark: #1E3F1A;
+  --color-primary-light: #3E7B37;
+  --color-primary-subtle: #EBF3EA;
+  --color-primary-tint: #F4F8F3;
+
+  /* Accent Food Tones */
+  --color-accent: #D97706;
+  --color-accent-light: #F59E0B;
+  --color-accent-subtle: #FEF3C7;
+  --color-coral: #E05344;
+
+  /* Natural Neutrals */
+  --color-bg: #FAF7F2;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #F4EFE8;
+  --color-surface-hover: #F8F4EE;
+  --color-border: #E8E2D7;
+  --color-border-subtle: #F0ECE4;
+
+  /* High Contrast Typography */
+  --color-text: #192219;
+  --color-text-secondary: #485447;
+  --color-text-muted: #717E70;
+  --color-text-inverse: #FFFFFF;
+
+  /* WhatsApp & Phone Highlights */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #128C7E;
+  --color-whatsapp-tint: #E8F8EE;
+
+  /* Typography Scale */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-display: -apple-system, BlinkMacSystemFont, "Outfit", "Plus Jakarta Sans", "Segoe UI", Roboto, sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: clamp(1.75rem, 2.5vw + 1rem, 2.25rem);
+  --font-size-3xl: clamp(2.25rem, 4vw + 1rem, 3.25rem);
+  --font-size-hero: clamp(2.5rem, 5.5vw + 1rem, 4.25rem);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+
+  /* Shadows (Natural & Soft) */
+  --shadow-sm: 0 2px 6px -1px rgba(25, 34, 25, 0.05);
+  --shadow-md: 0 8px 20px -4px rgba(25, 34, 25, 0.07);
+  --shadow-lg: 0 16px 36px -6px rgba(25, 34, 25, 0.1);
+  --shadow-xl: 0 24px 48px -12px rgba(25, 34, 25, 0.14);
+
+  /* Layout Containers */
+  --container-max: 1240px;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+  --header-height: 76px;
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
